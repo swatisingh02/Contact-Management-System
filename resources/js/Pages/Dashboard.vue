@@ -4,11 +4,16 @@ import { Head, Link } from '@inertiajs/vue3';
 defineProps({
     contacts: {
         type: Array,
+      
     },
     message: {
-        type: String
+        type: String,
     }
 });
+
+
+
+
 </script>
 
 <template>

@@ -31,6 +31,7 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 
+// Route::get('/dashboard', [ManagementController::class, 'contacts'])->name('contacts');
 Route::middleware('auth')->group(function () {
 
     Route::get('/categories', [ManagementController::class, 'categories'])->name('categories');

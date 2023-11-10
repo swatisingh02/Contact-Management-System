@@ -70,7 +70,8 @@ class ManagementController extends Controller
             'message' => session("message")
         ]);
     }
-
+   
+   
     public function create_contact()
     {
         return Inertia::render("Create-Contact", [
